@@ -1,0 +1,15 @@
+html
+	include head.pug
+	body
+		.buscador: form: input(type="text" placeholder="Tecnologia" class="buscador__input")
+		header.encabezado--con-filtros
+			h2 3 Resultados para "Tecnología"
+			.filtros
+				span Filtrar Por
+				a(href="#" class="fa fa-th-large")
+				a(href="#" class="fa fa-bars")
+		section.contenido
+			+caja("face.jpeg", "Tecnología", "Facebook se ha construido sus propios robots para automatizar y patrullar los centros de datos", "Facebook se ha convertido en una de las compañías con mayor red de centros de datos alrededor del mundo. Mantener decenas de enromes servidores no es ni fácil ni barato, pero con algo de automatización se puede reducir el coste de dicho mantenimiento.")
+			+caja("coche.jpg", "Tecnología", "Hyundai presenta un precioso automóvil eléctrico que cambia el volante por joysticks", "Puede la nueva edición del Salón del automóvil de Ginebra para 2020 haya sido cancelada por culpa del coronavirus, pero eso no parece estar impidiendo que los fabricantes de autos presenten las últimas ideas que tienen para el mundo del motor.")
+			+caja("wsp.jpg", "Tecnología", "Cómo forzar el modo oscuro en la aplicación de WhatsApp para Android", "De acuerdo con la compañía, el nuevo modo oscuro está diseñado para reducir la tensión ocular en entornos de poca luz. WhatsApp dice haber invertido tiempo de investigación y experimentación, particularmente en la elección de colores, para mejorar la legibilidad de los mensajes y lograr que los usuarios centren su atención en la información más importante.")
+	
